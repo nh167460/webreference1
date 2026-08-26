@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='storestyles.css') }}">
+    <title>Cipher PVP</title>
+</head>
+
+<body>
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/leaderboards">Leaderboards</a>
+    <a href="/store">Store</a>
+    <a href="/staff">Staff</a>
+    <a href="/punishments">Punishments</a>
+</nav>
+<div class="container">
+<div class="content-box left">
+    <h1>Month Ranks</h1>
+    {% for product in products_1month %}
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='images/+product.image') }}">
+            <h2>{{ product.name }}</h2>
+            <p>${{ product.price }}</p>
+            <p>{{ product.description }}</p>
+
+        <button class="addcart-button">Add to Cart</button>
+        </div>
+    {% endfor %}
+</div>
+<div class="content-box right">
+    <h1>Permanent Ranks</h1>
+    {% for product in products_permanent %}
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='images/+product.image') }}">
+            <h2>{{ product.name }}</h2>
+            <p>${{ product.price }}</p>
+            <p>{{ product.description }}</p>
+
+        <button class="addcart-button">Add to Cart</button>
+        </div>
+    {% endfor %}
+</div>
+</div>
+</body>
+</html>
