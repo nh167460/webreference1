@@ -1,0 +1,92 @@
+body {
+    padding-top: 10px;
+    background-image: url("images/Cipher PVP Background Image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px;
+}
+.content-box{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(0, 246, 237, 0.8);
+    border-radius: 4px;
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 6px rgba(000, 000, 000, 0.05);
+    margin: 40px auto;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .content-box {
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
+h1 {
+    text-align: center;
+}
+.navbar {
+    background-image: url("images/Cipher Banner Place Holder.jpg");
+    background-size: cover;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.navbar a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 2px solid rgba(0, 246, 237, 0.0);
+    border-radius: 4px;
+    text-align: center;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(0, 246, 237, 0.8);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.navbar a.active {
+    background-color: #0078ff;
+}
+.addcart-button {
+    background: linear-gradient(#55ff55, #00aa00);
+    border: 2px solid #004400;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.addcart-button:hover {
+    background: linear-gradient(#77ff77, #00cc00);
+}
+
+.addcart-button:active {
+    transform: translateY(2px);
+}
