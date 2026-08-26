@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Cipher PVP</title>
+</head>
+
+<body>
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/leaderboards">Leaderboards</a>
+    <a href="/store">Store</a>
+    <a href="/staff">Staff</a>
+    <a href="/punishments">Punishments</a>
+</nav>
+<main class="content-box">
+    <h1>WELCOME TO CIPHER PVP!</h1>
+    <p>Test your skills in combat! Whether it is in our brutal action packed FFAs or in a one on one duel to the death,
+        it is up to you to embrace your skill and rise up the ranks to become the best you can be!
+    </p>
+    </main>
+<main class="content-box">
+    <p>Discord:<a href="https://discord.gg/uzdvGY3X8C"><span class="copyable">Cipher PVP <img src="{{ url_for('static', filename='images/Discord-Symbol-Blurple.png') }}" width="15" height="15"></span></a></p>
+    <p>Server IP:<span class="copyable" onclick="copyText(this)">104.254.128.194:50185</span></p>
+    <script>
+    function copyText(element) {
+        navigator.clipboard.writeText(element.textContent);
+
+        const original = element.textContent;
+        element.textContent = "Copied!";
+
+    setTimeout(() => {
+        element.textContent = original;
+    }, 1000);
+}
+</script>
+</main>
+</body>
+</html>
